@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap');
+
+main {
+    overflow: hidden;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#plane {
+    width: 100px;
+    /* Adjust size as needed */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Translucent Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Adjust the alpha value for transparency */
+    backdrop-filter: blur(10px);
+    /* Add a blurred effect to the background */
+    padding: 10px 0;
+    z-index: 1000;
+    /* Ensure the navbar stays above other content */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 30px;
+    /* Adjust the size of the logo */
+}
+
+.app-title {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FF6900;
+    font-style: normal;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: #63666A;
+    text-decoration: none;
+    margin-right: 24px;
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.nav-links a:hover {
+    font-weight: 500;
+    color: #444444;
+    /* Change the color on hover */
+}
+
+/* Content area below the navbar */
+.content {
+    margin-top: 80px;
+    /* Adjust according to the height of the navbar */
+    padding: 20px;
+}
+
+#description-container {
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+#description-text-container {
+    position: relative;
+    width: 450px;
+    text-align: left;
+}
+
+#description-text-container img {
+    position: absolute;
+    height: 200px;
+    z-index: 1;
+}
+
+#plane-svg-1 {
+    top: -70px;
+    left: -50px;
+}
+
+#plane-svg-2 {
+    top: 0px;
+    right: 80px;
+    transform: scaleX(-1);
+}
+
+#description-text-container p {
+    position: relative;
+    z-index: 2;
+}
+
+#description-text {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 43px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    color: #444444;
+}
+
+#description-undertone {
+    margin-top: 20px;
+    font-size: 19px;
+    line-height: 29px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #63666A;
+}
+
+#description-image img {
+    height: 400px;
+}
+
+#explore-divider {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    height: 150px;
+    background-color: #0077C8;
+}
+
+#our-partners {
+    height: 100vh;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    font-family: "Comfortaa", sans-serif;
+    color: #FF6900;
+}
+
+.agency-card {
+    color: #63666A;
+    text-align: left;
+    margin: 75px 150px;
+    display: flex;
+    gap: 50px;
+    font-family: "Roboto Slab", serif;
+}
+
+.agency-details {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 40%;
+    gap: 25px;
+}
+
+.agency-title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 43px;
+    font-family: "Comfortaa", sans-serif;
+    color: #0077C8;
+}
+
+.agency-review {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agency-review img {
+    width: 22px;
+    height: 22px;
+}
+
+.agency-code {
+    font-size: 19px;
+    line-height: 29px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #444444;
+}
+
+.agency-options {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.agency-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.agency-offer-text {
+    font-size: 20px;
+}
+
+.agency-offer-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.15);
+}
+
+.agency-offer-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.agency-description {
+    line-height: 30px;
+}
+
+.agency-message {
+    width: 60%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.agency-message-image {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.agency-message-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.agency-message-description {
+    height: 40%;
+}
+
+.agency-message-title {
+    color: #0077C8;
+    font-size: 21px;
+    padding: 10px 0px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.agency-message-content {
+    padding: 12px 30px;
+    line-height: 25px;
+}
+
+.agency-cards-container {
+    position: relative;
+}
+
+.card-container {
+    height: 80vh;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+}
+
+#team-divider {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 150px;
+    width: 100%;
+    background-color: #FDE156;
+}
+
+#tree-svg-1 {
+    position: absolute;
+    height: 150px;
+    top: -135px;
+    left: 200px;
+}
+
+#tree-svg-2 {
+    position: absolute;
+    height: 120px;
+    top: -105px;
+    left: 300px;
+    transform: scaleX(-1);
+}
+
+#tree-svg-3 {
+    position: absolute;
+    height: 200px;
+    right: 400px;
+    top: -140px;
+}
+
+#team-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-bubble {
+    height: 150px;
+    width: 150px;
+    border: solid 10px #FF6900;
+    background: #FF6900;
+    border-radius: 150px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.image-bubble img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+.member h3 {
+    width: 200px;
+    font-size: 26px;
+    font-family: "Roboto Slab", serif;
+}
