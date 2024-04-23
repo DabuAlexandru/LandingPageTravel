@@ -4,8 +4,8 @@ gsap.registerPlugin(MotionPathPlugin);
 
 gsap.to('#plane', {
   scrollTrigger: {
-    trigger: "#explore",
-    start: "-600 top",
+    trigger: "#our-team",
+    start: "150% 25%",
     end: "+=500",
     scrub: 0.5, // Smoothly animate on scroll
   },
@@ -154,3 +154,38 @@ if (memberList.length > 0) {
     ease: "bounce.out",
   })
 }
+
+const offerCards = gsap.utils.toArray('.offer-card');
+
+if (offerCards.length > 0) {
+  const fadeTimeline = gsap.timeline({ repeat: -1, stagger: 1 });
+
+  offerCards.forEach((offerCard, index) => {
+    // Set initial opacity based on index
+    gsap.set(offerCard, { autoAlpha: index === 0 ? 1 : 0 });
+
+    // Add fade out and fade in animations
+    fadeTimeline.to(offerCard, { autoAlpha: 0, duration: 4 })
+      .to(offerCards[(index + 1) % offerCards.length], { autoAlpha: 1, duration: 2 }, "-=3.5");
+  });
+
+  // if (offerCards.length > 0) {
+  //   const fadeTimeline = gsap.timeline({ repeat: -1 }); // Loop indefinitely
+
+  //   // Initial state: Set all elements to opacity 0 except the first
+  //   fadeTimeline.set(offerCards, { opacity: 0 });
+  //   fadeTimeline.set(offerCards[0], { opacity: 1 }); // Make the first element visible
+
+  //   // Fade loop for subsequent elements
+  //   offerCards.forEach((card, index) => {
+  //     const prevCard = index > 0 ? offerCards[index - 1] : offerCards[offerCards.length - 1]; // Handle first iteration and wrapping
+
+  //     fadeTimeline
+  //       .to(prevCard, { opacity: 0, duration: 1 }, `+=1`) // Fade out previous element
+  //       .to(card, { opacity: 1, duration: 1 }, `-=1`); // Fade in current element
+  //   });
+
+
+  // }
+}
+

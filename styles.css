@@ -96,6 +96,7 @@ main {
     align-items: center;
     justify-content: center;
     padding-top: 100px;
+    margin-bottom: 150px;
     width: 100%;
     display: flex;
     gap: 50px;
@@ -153,7 +154,6 @@ main {
 }
 
 #explore-divider {
-    margin-top: 150px;
     margin-bottom: 100px;
     height: 150px;
     background-color: #0077C8;
@@ -373,4 +373,89 @@ footer {
     margin-bottom: 20px;
     font-family: "Roboto Slab", serif;
     color: #63666A;
+}
+
+#offer-cards-container {
+    position: relative;
+    height: 350px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+#offers-container {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.offer-card {
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.offer-score-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.offer-score-container img {
+    width: 22px;
+    height: 22px;
+}
+
+.agency-score {
+    color: #63666A;
+    font-family: "Roboto Slab", serif;
+}
+
+.offer-presentation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.offer-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#offers-call-to-action h1 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 43px;
+    font-family: "Comfortaa", sans-serif;
+    color: #0077C8;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#offers-call-to-action p {
+    line-height: 30px;
+    width: 300px;
+    color: #63666A;
+    text-align: left;
+    font-family: "Roboto Slab", serif;
+}
+
+.offer-location * {
+    color: #63666A;
+    text-align: left;
+    font-family: "Roboto Slab", serif;
+}
+
+.offer-location h2 {
+    font-size: 20px;
+}
+
+.offer-location h4 {
+    font-size: 15px;
+    font-weight: 400;
 }
