@@ -368,3 +368,9 @@ main {
     font-size: 26px;
     font-family: "Roboto Slab", serif;
 }
+
+footer {
+    margin-bottom: 20px;
+    font-family: "Roboto Slab", serif;
+    color: #63666A;
+}
